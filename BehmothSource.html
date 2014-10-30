@@ -1,643 +1,568 @@
-
 <!DOCTYPE html>
 <html lang="en-US">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="initial-scale=1.0">
-
-        <title>BEHEMOTH</title>
-        <link rel="alternate" type="application/rss+xml" title="BEHEMOTH RSS Feed" href="http://bonfirethemes.com/_behemoth/feed/">
-
-        <!--region-->
-        <!-- wp_header -->
-        <link rel="alternate" type="application/rss+xml" title="BEHEMOTH &raquo; Feed" href="http://bonfirethemes.com/_behemoth/feed/" />
-        <link rel="alternate" type="application/rss+xml" title="BEHEMOTH &raquo; Comments Feed" href="http://bonfirethemes.com/_behemoth/comments/feed/" />
-        <link rel='stylesheet' id='bonfire-canvas-css-css'  href='http://bonfirethemes.com/_behemoth/wp-content/plugins/canvas-by-bonfire/canvas.css?ver=1' type='text/css' media='all' />
-        <link rel='stylesheet' id='canvas-fontawesome-css'  href='http://bonfirethemes.com/_behemoth/wp-content/plugins/canvas-by-bonfire/fonts/font-awesome/css/font-awesome.min.css?ver=1' type='text/css' media='all' />
-        <link rel='stylesheet' id='bonfire-shortcodes-css'  href='http://bonfirethemes.com/_behemoth/wp-content/plugins/shortcodes-by-bonfire/shortcodes-by-bonfire.css?ver=1' type='text/css' media='all' />
-        <link rel='stylesheet' id='psw-css-css'  href='http://bonfirethemes.com/_behemoth/wp-content/plugins/photoswipe/lib/photoswipe/photoswipe.css?ver=3.8.4' type='text/css' media='all' />
-        <link rel='stylesheet' id='bonfire-fonts-css'  href='http://fonts.googleapis.com/css?family=Open+Sans%3A300%2C400%7CMontserrat%3A400%2C700%7CDosis%3A300%2C500%2C600%2C700%7CNoticia+Text%3A400italic%27+rel%3D%27stylesheet%27+type%3D%27text%2Fcss&#038;ver=3.8.4' type='text/css' media='all' />
-        <link rel='stylesheet' id='fontawesome-css'  href='BehmothFontAwesome.css' type='text/css' media='all' />
-        <link rel='stylesheet' id='style-css'  href='BehmothStyles.css' type='text/css' media='all' />
-        <link rel='stylesheet' id='media-queries-css'  href='BehmothMediaQueries.css' type='text/css' media='all' />
-        <link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://bonfirethemes.com/_behemoth/xmlrpc.php?rsd" />
-        <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://bonfirethemes.com/_behemoth/wp-includes/wlwmanifest.xml" /> 
-        <meta name="generator" content="WordPress 3.8.4" />
-
-                <!-- BEGIN CUSTOM COLORS (WP THEME CUSTOMIZER) -->
-
-                <style>
-                /* triangle button icon color */
-                .bonfire-slideout-button { color:; }
-                /* triangle button icon hover color */
-                .bonfire-slideout-button:hover { color:; }
-                /* triangle button background */
-                .bonfire-slideout-button-triangle-background { border-bottom-color:; }
-                /* canvas background color */
-                .bonfire-slideout { background-color:; }
-                /* text color */
-                .bonfire-slideout-content, .bonfire-slideout-content p, .canvas-widgets-1-column .widget, .canvas-widgets-2-columns .widget, .canvas-widgets-3-columns .widget { color:; }
-                /* link color */
-                .bonfire-slideout-content a, .bonfire-slideout-content p a, .canvas-widgets-1-column .widget a, .canvas-widgets-2-columns .widget a, .canvas-widgets-3-columns .widget a { color:; }
-                /* link hover color */
-                .bonfire-slideout-content a:hover, .bonfire-slideout-content p a:hover, .canvas-widgets-1-column .widget a:hover, .canvas-widgets-2-columns .widget a:hover, .canvas-widgets-3-columns .widget a:hover { color:; }
-                /* widget title color */
-                .canvas-widgets-1-column .widget .widgettitle, .canvas-widgets-2-columns .widget .widgettitle, .canvas-widgets-3-columns .widget  .widgettitle { color:; }
-                </style>
-                <!-- END CUSTOM COLORS (WP THEME CUSTOMIZER) -->
-        <!--endregion-->
-        <!--region Bootstrap references-->
-            <!-- Bootstrap - Latest compiled and minified CSS -->
-            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-
-            <!-- Bootstrap - Optional theme -->
-            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-        <!--endregion>
-    </head>
-
-    <body class="home blog">
-
-    <!--region BEGIN THEME CUSTOMIZATION (in WP backend) -->
-    <!-- BEGIN CUSTOM COLORS (WP THEME CUSTOMIZER) -->
-    <style>
-    #header-wrapper { background-color:; }
-    .site-logo, .site-logo a { color:; }
-    .menu-button:hover .site-logo, .menu-button:hover .site-logo a { color:; }
-
-    .post-title, .page-title, .post-title a, .page-title a, .light .post-title, .light .page-title, .light .post-title a, .light .page-title a, .lighter .post-title, .lighter .page-title, .lighter .post-title a, .lighter .page-title a { color:; }
-    .post-title a:hover, .page-title a:hover, .light .post-title a:hover, .light .page-title a:hover, .lighter .post-title a:hover, .lighter .page-title a:hover { color:; }
-
-    .entry-content a { color:; }
-    .entry-content a:hover { color:; }
-
-    #respond, #respond #cancel-comment-reply-link { background-color:; }
-    #respond #submit { background-color:; }
-
-    .read-leave-comments { color:; border-color:; }
-    .read-leave-comments:hover { background-color: !important; border-color: !important; }
-
-    .post-meta-author-date { color:; border-color:; }
-    .post-meta-author-date:hover { background-color:; border-color:; }
-
-    .post-meta-tags { color:; border-color:; }
-    .post-meta-tags:hover { background-color:; border-color:; }
-
-    #footer { background-color:; }
-
-    .commentwrap { background-color:; }
-
-    #contactform-wrapper { background-color:#085a49; }
-    #contact-submit { background-color:; }
-
-    .menu-button { background-color:; }
-    .menu-button-hover-touch, .menu-button-hover { background-color: !important; }
-
-    </style>
-    <!-- END CUSTOM COLORS (WP THEME CUSTOMIZER) -->
-    <!--endregion END THEME CUSTOMIZATION (in WP backend) -->
-
-    <!--region BEGIN MENU BAR -->
-    <div id="header-wrapper">
-
-        <!-- BEGIN MENU BUTTON -->
-        <div class="menu-button">
-
-                <!-- BEGIN SITE NAME -->
-                <div class="site-logo">BEHEMOTH</div>
-                <!-- END SITE NAME -->
-
-                </div>
-        <!-- END MENU BUTTON -->
-
-
-        <!-- BEGIN ICON MENU -->
-        <div class="bonfire-icon-menu"><ul id="menu-icon-menu" class="menu"><li id="menu-item-1547" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1547"><a href="http://dribbble.com/Bonfire"><i class="fa fa-dribbble"></i></a></li>
-    <li id="menu-item-1366" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1366"><a href="#"><i class="fa fa-google-plus"></i></a></li>
-    <li id="menu-item-1925" class="blue menu-item menu-item-type-custom menu-item-object-custom menu-item-1925"><a href="#"><i class="fa fa-skype"></i></a></li>
-    </ul></div>	<!-- END ICON MENU -->
-
-
-        <!-- BEGIN SEARCH BUTTON + SEARCH FORM -->
-            <!-- BEGIN SEARCH BUTTON --><div id="header-search"><i class="fa fa-search"></i></div><!-- END SEARCH BUTTON -->
-            <!-- BEGIN SEARCH FORM --><!-- BEGIN SEARCH FORM -->
-    <div class="searchform-wrapper">
-        <!-- BEGIN SEARCH FORM CLOSE BUTTON--><div id="searchform-close"></div><!-- END SEARCH FORM CLOSE BUTTON-->
-
-        <form method="get" id="searchform" action="http://bonfirethemes.com/_behemoth/">
-            <input type="text" name="s" id="s" placeholder="find something..">
-        </form>
-    </div>
-    <!-- END SEARCH FORM --><!-- END SEARCH FORM -->
-        <!-- END SEARCH BUTTON + SEARCH FORM -->
-
-    </div>
-    <!--endregion END MENU BAR -->
-
-    <!--region BEGIN ACCORDION MENU -->
-    <div id="menu">
-        <div class="menu01"><ul id="menu-main-menu" class="menu"><li id="menu-item-5" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-5"><a href="http://bonfirethemes.com/_behemoth/"><i class="fa fa-power-off"></i> THE BLOG</a></li>
-    <li id="menu-item-1651" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1651"><a href="http://bonfirethemes.com/_behemoth/features/"><i class="fa fa-compass"></i> FEATURES</a></li>
-    <li id="menu-item-9" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9"><a href="http://bonfirethemes.com/_behemoth/shortcodes/"><i class="fa fa-code"></i> SHORTCODES</a></li>
-    <li id="menu-item-1949" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1949"><a href="http://bonfirethemes.com/_behemoth/2013/08/07/gallery/"><i class="fa fa-camera-retro"></i> GALLERY</a></li>
-    <li id="menu-item-7" class="sub second menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-7"><a><i class="fa fa-desktop"></i> MISC</a>
-    <ul class="sub-menu">
-        <li id="menu-item-11" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-11"><a href="http://bonfirethemes.com/_behemoth/formatting/"><i class="fa fa-align-left"></i> FORMATTING</a></li>
-        <li id="menu-item-12" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12"><a href="http://bonfirethemes.com/_behemoth/archive/"><i class="fa fa-calendar"></i>ARCHIVE</a></li>
-        <li id="menu-item-13" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-13"><a href="http://bonfirethemes.com/_behemoth/404/"><i class="fa fa-times-circle"></i>404 PAGE</a></li>
-    </ul>
-    </li>
-    <li id="menu-item-10" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10"><a href="http://bonfirethemes.com/_behemoth/get-in-touch/"><i class="fa fa-map-marker"></i> GET IN TOUCH</a></li>
-    <li id="menu-item-8" class="threecolumns salmon menu-item menu-item-type-custom menu-item-object-custom menu-item-8"><a href="http://themeforest.net/item/behemoth-reshape-your-blog/5355556/?ref=BonfireThemes"><i class="fa fa-heart-o"></i> PURCHASE THIS THEME</a></li>
-    </ul></div></div>
-    <!--endregion END ACCORDION MENU -->
-
-
-    <div id="sitewrap">
-
-        <div id="body" class="pagewidth clearfix">		
-
-    <div id="content" class="clearfix">
-
-    <div class="dark-image" style="background-image: url(http://i.imgur.com/JWMaD3w.jpg);background-size:cover;background-repeat:no-repeat;background-position:50% 40%;z-index:-1;">
-    <div class="post-background-opacity green">
-    <div class="featured-image-toggle-wrapper">
-    <a href="#"><div class="featured-image-toggle"></div></a>
-    </div>
-
-    <div class="content-wrapper">
-
-        <article id="post-44" class="post-44 post type-post status-publish format-quote sticky hentry category-uncategorized tag-nathan-drake tag-uncharted">
-
-            <!-- BEGIN TITLE -->
-            <h1 class="post-title">
-                <a href="http://bonfirethemes.com/_behemoth/2013/08/02/quote-post/" title="Permalink to Quote post" rel="bookmark">
-                    Quote post			</a>
-            </h1>
-            <!-- END TITLE -->
-
-            <!-- BEGIN TITLE SPACER IMAGE -->
-            <div class="title-spacer"></div>
-            <!-- END TITLE SPACER IMAGE -->
-
-            <!-- BEGIN CONTENT -->
-            <div class="entry-content">
-                <blockquote style="border-left: 5px"><p>&#8221;I didn't want that freigther anyways &#8220;</p></blockquote> 
-                <p>Someone losing in eve online</p>
-            </div>
-            <!-- END CONTENT -->
-
-            <!-- BEGIN AUTHOR + DATE + TAGS WRAPPER -->
-                    <!-- END AUTHOR + DATE + TAGS WRAPPER -->
-
-
-            <!-- BEGIN POST NAVIGATION -->
-            <div class="link-pages">
-                        </div>
-            <!-- END POST NAVIGATION -->
-
-            <!-- BEGIN EDIT POST LINK -->
-                    <!-- END EDIT POST LINK -->
-
-        </article>
-
-    </div>
-    </div>
-
-    </div>
-
-        <!--region Post-->
-        <div class="darker ">
-
-        <div class="content-wrapper">
-
-            <article id="post-32" class="post-32 post type-post status-publish format-standard hentry category-uncategorized tag-bonfire tag-standard-post">
-
-                <!-- BEGIN TITLE -->
-                <h1 class="post-title">
-                    <a href="http://bonfirethemes.com/_behemoth/2013/08/07/behemoth-reshape-your-wordpress-blog/" title="Permalink to &#8216;Behemoth&#8217; &#8211; reshape your WordPress blog" rel="bookmark">
-                        &#8216;Behemoth&#8217; &#8211; reshape your WordPress blog			</a>
-                </h1>
-                <!-- END TITLE -->
-
-                <!-- BEGIN TITLE SPACER IMAGE -->
-                <div class="title-spacer"></div>
-                <!-- END TITLE SPACER IMAGE -->
-
-                <!-- BEGIN CONTENT -->
-                <div class="entry-content">
-                    <p>This is the standard post in its purest form; only text and a clear dark background. As can be seen from all the different post examples though, you can beef it up with a background color and/or image, and potentially make every post utterly unique. It&#8217;s completely up to you how deep you want to go.</p>
-                </div>
-                <!-- END CONTENT -->
-
-                <!-- BEGIN AUTHOR + DATE + TAGS WRAPPER -->
-                        <!-- END AUTHOR + DATE + TAGS WRAPPER -->
-
-                <!-- BEGIN POST NAVIGATION -->
-                <div class="link-pages">
-                            </div>
-                <!-- END POST NAVIGATION -->
-
-                <!-- BEGIN EDIT POST LINK -->
-                        <!-- END EDIT POST LINK -->
-
-            </article>
-
-        </div>
-
-        </div>
-        <!--endregion-->
-
-
-        <div class="dark ">
-        <div class="content-wrapper">
-
-            <article id="post-63" class="post-63 post type-post status-publish format-gallery hentry category-uncategorized tag-gallery tag-photoswipe">
-
-                <!-- BEGIN TITLE -->
-                <h1 class="post-title">
-                    <a href="http://bonfirethemes.com/_behemoth/2013/08/07/gallery/" title="Permalink to Gallery software ready for touch devices" rel="bookmark">
-                        Gallery software ready for touch devices			</a>
-                </h1>
-                <!-- END TITLE -->
-
-                <!-- BEGIN TITLE SPACER IMAGE -->
-                <div class="title-spacer"></div>
-                <!-- END TITLE SPACER IMAGE -->
-
-                <!-- BEGIN CONTENT -->
-                <div class="entry-content">
-
-                <style type='text/css'>
-                    #gallery-1 {
-                        margin: auto;
-                    }
-                    #gallery-1 .gallery-item {
-                        float: left;
-                        margin-top: 10px;
-                        text-align: center;
-                        width: 33%;
-                    }
-                    #gallery-1 img {
-                        border: 2px solid #cfcfcf;
-                    }
-                    #gallery-1 .gallery-caption {
-                        margin-left: 0;
-                    }
-                    /* see gallery_shortcode() in wp-includes/media.php */
-                </style>
-                <div id='gallery-1' class='gallery galleryid-63 gallery-columns-3 gallery-size-thumbnail'><dl class='gallery-item'>
-                    <dt class='gallery-icon landscape'>
-                        <a href='http://bonfirethemes.com/_behemoth/wp-content/uploads/2013/08/gallery_01.jpg'><img width="500" height="285" src="http://bonfirethemes.com/_behemoth/wp-content/uploads/2013/08/gallery_01-500x285.jpg" class="attachment-thumbnail" alt="gallery_01" /></a>
-                    </dt></dl><dl class='gallery-item'>
-                    <dt class='gallery-icon landscape'>
-                        <a href='http://bonfirethemes.com/_behemoth/wp-content/uploads/2013/08/gallery_02.jpg'><img width="500" height="285" src="http://bonfirethemes.com/_behemoth/wp-content/uploads/2013/08/gallery_02-500x285.jpg" class="attachment-thumbnail" alt="gallery_02" /></a>
-                    </dt></dl><dl class='gallery-item'>
-                    <dt class='gallery-icon landscape'>
-                        <a href='http://bonfirethemes.com/_behemoth/wp-content/uploads/2013/07/helmet-bw.jpg'><img width="500" height="285" src="http://bonfirethemes.com/_behemoth/wp-content/uploads/2013/07/helmet-bw.jpg" class="attachment-thumbnail" alt="helmet-bw" /></a>
-                    </dt></dl><br style="clear: both" /><dl class='gallery-item'>
-                    <dt class='gallery-icon portrait'>
-                        <a href='http://bonfirethemes.com/_behemoth/wp-content/uploads/2013/05/axe-full.jpg'><img width="500" height="285" src="http://bonfirethemes.com/_behemoth/wp-content/uploads/2013/05/axe-full-500x285.jpg" class="attachment-thumbnail" alt="axe-full" /></a>
-                    </dt></dl><dl class='gallery-item'>
-                    <dt class='gallery-icon landscape'>
-                        <a href='http://bonfirethemes.com/_behemoth/wp-content/uploads/2013/08/gallery_05.jpg'><img width="500" height="285" src="http://bonfirethemes.com/_behemoth/wp-content/uploads/2013/08/gallery_05-500x285.jpg" class="attachment-thumbnail" alt="gallery_05" /></a>
-                    </dt></dl><dl class='gallery-item'>
-                    <dt class='gallery-icon landscape'>
-                        <a href='http://bonfirethemes.com/_behemoth/wp-content/uploads/2013/08/gallery_06.jpg'><img width="500" height="285" src="http://bonfirethemes.com/_behemoth/wp-content/uploads/2013/08/gallery_06-500x285.jpg" class="attachment-thumbnail" alt="gallery_06" /></a>
-                    </dt></dl><br style="clear: both" />
-                    <br style='clear: both;' />
-                </div>
-
-        <p style="text-align: left;">
-                </div>
-                <!-- END CONTENT -->
-
-                <!-- BEGIN AUTHOR + DATE + TAGS WRAPPER -->
-                        <!-- END AUTHOR + DATE + TAGS WRAPPER -->
-
-
-                <!-- BEGIN POST NAVIGATION -->
-                <div class="link-pages">
-                            </div>
-                <!-- END POST NAVIGATION -->
-
-                <!-- BEGIN EDIT POST LINK -->
-                        <!-- END EDIT POST LINK -->
-
-            </article>
-
-        </div>
-        </div>
-        <div class="darker-image" style="background-image: url(http://bonfirethemes.com/_behemoth/wp-content/uploads/2013/08/battlefield_4_china_rising-wide.jpg);background-size:cover;background-repeat:no-repeat;background-position:top center;z-index:-1;">
-        <!-- END ALTERNATE POST BACKGROUND COLOR + FEATURED IMAGE AS BACKGROUND -->
-
-
-        <!-- BEGIN DIV WRAPPER IF FEATURED IMAGE USED -->
-        <div class="post-background-opacity ">
-        <!-- BEGIN TOGGLE SHOW/HIDE CONTENT IF FEATURED IMAGE USED -->
-        <div class="featured-image-toggle-wrapper">
-        <a href="#"><div class="featured-image-toggle"></div></a>
-        </div>
-        <!-- END TOGGLE SHOW/HIDE CONTENT IF FEATURED IMAGE USED -->
-        <!-- END DIV WRAPPER IF FEATURED IMAGE USED -->
-
-        <div class="content-wrapper">
-
-            <article id="post-1860" class="post-1860 post type-post status-publish format-video hentry category-uncategorized tag-bonfire tag-video-post">
-
-                <!-- BEGIN TITLE -->
-                <h1 class="post-title">
-                    <a href="http://bonfirethemes.com/_behemoth/2013/08/07/a-quick-video-post-with-a-background-image-pew-pew/" title="Permalink to A quick video post with a background image&#8230; pew pew." rel="bookmark">
-                        A quick video post with a background image&#8230; pew pew.			</a>
-                </h1>
-                <!-- END TITLE -->
-
-                <!-- BEGIN TITLE SPACER IMAGE -->
-                <div class="title-spacer"></div>
-                <!-- END TITLE SPACER IMAGE -->
-
-                <!-- BEGIN CONTENT -->
-                <div class="entry-content">
-                    <div class="post-video"><iframe src="http://player.vimeo.com/video/68128762" width="1000" height="563" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div>
-                </div>
-                <!-- END CONTENT -->
-
-                <!-- BEGIN AUTHOR + DATE + TAGS WRAPPER -->
-                        <!-- END AUTHOR + DATE + TAGS WRAPPER -->
-
-                <!-- BEGIN POST NAVIGATION -->
-                <div class="link-pages">
-                            </div>
-                <!-- END POST NAVIGATION -->
-
-                <!-- BEGIN EDIT POST LINK -->
-                        <!-- END EDIT POST LINK -->
-
-            </article>
-
-        </div>
-        <!-- /.content-wrapper -->
-
-        <!-- BEGIN DIV WRAPPER IF FEATURED IMAGE USED -->
-        </div>
-        <!-- END DIV WRAPPER IF FEATURED IMAGE USED -->
-
-        </div>
-        <div class="dark ">
-        <!-- END ALTERNATE POST BACKGROUND COLOR + FEATURED IMAGE AS BACKGROUND -->
-
-
-        <!-- BEGIN DIV WRAPPER IF FEATURED IMAGE USED -->
-        <!-- END DIV WRAPPER IF FEATURED IMAGE USED -->
-
-        <div class="content-wrapper">
-
-            <article id="post-172" class="post-172 post type-post status-publish format-link hentry category-uncategorized tag-link-post">
-
-                <!-- BEGIN TITLE -->
-                <h1 class="post-title">
-                    <a href="http://bonfirethemes.com/_behemoth/2013/08/07/link-post/" title="Permalink to Link post" rel="bookmark">
-                        Link post			</a>
-                </h1>
-                <!-- END TITLE -->
-
-                <!-- BEGIN TITLE SPACER IMAGE -->
-                <div class="title-spacer"></div>
-                <!-- END TITLE SPACER IMAGE -->
-
-                <!-- BEGIN CONTENT -->
-                <div class="entry-content">
-                    <p>I found <a href="#">this terrific link</a> today, don’t miss it!</p>
-                </div>
-                <!-- END CONTENT -->
-
-                <!-- BEGIN AUTHOR + DATE + TAGS WRAPPER -->
-                        <!-- END AUTHOR + DATE + TAGS WRAPPER -->
-
-
-                <!-- BEGIN POST NAVIGATION -->
-                <div class="link-pages">
-                            </div>
-                <!-- END POST NAVIGATION -->
-
-                <!-- BEGIN EDIT POST LINK -->
-                        <!-- END EDIT POST LINK -->
-
-            </article>
-
-        </div>
-        <!-- /.content-wrapper -->
-
-        <!-- BEGIN DIV WRAPPER IF FEATURED IMAGE USED -->
-        <!-- END DIV WRAPPER IF FEATURED IMAGE USED -->
-
-        </div>
-
-
-        <div class="darker ">
-        <!-- END ALTERNATE POST BACKGROUND COLOR + FEATURED IMAGE AS BACKGROUND -->
-
-
-        <!-- BEGIN DIV WRAPPER IF FEATURED IMAGE USED -->
-        <!-- END DIV WRAPPER IF FEATURED IMAGE USED -->
-
-        <div class="content-wrapper">
-
-            <article id="post-1" class="post-1 post type-post status-publish format-aside hentry category-uncategorized tag-naughty-dog tag-the-last-of-us">
-
-                <!-- BEGIN TITLE -->
-                <h1 class="post-title">
-                    <a href="http://bonfirethemes.com/_behemoth/2013/08/06/aside-post-format/" title="Permalink to Aside post format" rel="bookmark">
-                        Aside post format			</a>
-                </h1>
-                <!-- END TITLE -->
-
-                <!-- BEGIN TITLE SPACER IMAGE -->
-                <div class="title-spacer"></div>
-                <!-- END TITLE SPACER IMAGE -->
-
-                <!-- BEGIN CONTENT -->
-                <div class="entry-content">
-                    <p>Do you have some quick, title-less thoughts you’d like to put down? That’s what this aside post format is for. With a different typography when compared to the standard post, it’s clear that this is for the short story teller in all of us. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam.</p>
-                </div>
-                <!-- END CONTENT -->
-
-                <!-- BEGIN AUTHOR + DATE + TAGS WRAPPER -->
-                        <!-- END AUTHOR + DATE + TAGS WRAPPER -->
-
-                <!-- BEGIN POST NAVIGATION -->
-                <div class="link-pages">
-                            </div>
-                <!-- END POST NAVIGATION -->
-
-                <!-- BEGIN EDIT POST LINK -->
-                        <!-- END EDIT POST LINK -->
-
-            </article>
-
-        </div>
-        <!-- /.content-wrapper -->
-
-        <!-- BEGIN DIV WRAPPER IF FEATURED IMAGE USED -->
-        <!-- END DIV WRAPPER IF FEATURED IMAGE USED -->
-
-        </div>
-
-        <div class="dark-image" style="background-image: url(http://bonfirethemes.com/_behemoth/wp-content/uploads/2013/06/tlou_bw.jpg);background-size:cover;background-repeat:no-repeat;background-position:top center;z-index:-1;">
-        <!-- END ALTERNATE POST BACKGROUND COLOR + FEATURED IMAGE AS BACKGROUND -->
-
-
-        <!-- BEGIN DIV WRAPPER IF FEATURED IMAGE USED -->
-        <div class="post-background-opacity blue">
-        <!-- BEGIN TOGGLE SHOW/HIDE CONTENT IF FEATURED IMAGE USED -->
-        <div class="featured-image-toggle-wrapper">
-        <a href="#"><div class="featured-image-toggle"></div></a>
-        </div>
-        <!-- END TOGGLE SHOW/HIDE CONTENT IF FEATURED IMAGE USED -->
-        <!-- END DIV WRAPPER IF FEATURED IMAGE USED -->
-
-        <div class="content-wrapper">
-
-            <article id="post-176" class="post-176 post type-post status-publish format-status hentry category-uncategorized tag-naughty-dog tag-the-last-of-us">
-
-                <!-- BEGIN TITLE -->
-                <h1 class="post-title">
-                    <a href="http://bonfirethemes.com/_behemoth/2013/08/06/status-post/" title="Permalink to Status post" rel="bookmark">
-                        Status post			</a>
-                </h1>
-                <!-- END TITLE -->
-
-                <!-- BEGIN TITLE SPACER IMAGE -->
-                <div class="title-spacer"></div>
-                <!-- END TITLE SPACER IMAGE -->
-
-                <!-- BEGIN CONTENT -->
-                <div class="entry-content">
-                    <p>Started playing The Last of Us on my PS3. The game is beyond amazing; a fantastic offering from Naughty Dog while they give Nate a deserved break.</p>
-        <p>&nbsp;</p>
-                </div>
-                <!-- END CONTENT -->
-
-                <!-- BEGIN AUTHOR + DATE + TAGS WRAPPER -->
-                        <!-- END AUTHOR + DATE + TAGS WRAPPER -->
-
-                <!-- BEGIN POST NAVIGATION -->
-                <div class="link-pages">
-                            </div>
-                <!-- END POST NAVIGATION -->
-
-                <!-- BEGIN EDIT POST LINK -->
-                        <!-- END EDIT POST LINK -->
-
-            </article>
-
-        </div>
-        <!-- /.content-wrapper -->
-
-        <!-- BEGIN DIV WRAPPER IF FEATURED IMAGE USED -->
-        </div>
-        <!-- END DIV WRAPPER IF FEATURED IMAGE USED -->
-
-        </div>
-
-
-    </div>
-        </div>
-    </div>
-
-    <div id="footer">
-
-            <!-- BEGIN INCLUDE PAGINATION -->
-            <!-- BEGIN NEXT PAGE, PREV PAGE -->						
-    <div class="post-nav">
-    <div class="prev-inactive"></div>
-    <div class="next-inactive"><a href="http://bonfirethemes.com/_behemoth/page/2/" ><div class="next"></div></a></div>
-    </div>
-    <!-- END NEXT PAGE, PREV PAGE -->		<!-- END INCLUDE PAGINATION -->
-
-            <!-- BEGIN WIDGETS -->
-            <div class="footer-widgets-wrapper">
-                <div class="footer-widgets-wrapper-inner">
-                    <!-- BEGIN FULL WIDTH WIDGETS --><div class="footer-widgets-1-column"><div id="text-4" class="widget widget_text">			<div class="textwidget"><div style="text-align:center;margin-bottom:20px;">The footer area here is fully widgetized, with widgets appearing in one, two, as well as three columns. Insert as many as you’d like, or none at all; it’s completely up to you.</div></div>
-            </div></div><!-- END FULL WIDTH WIDGETS -->
-                    <!-- BEGIN 2-COLUMN WIDGETS --><div class="footer-widgets-2-columns clear"></div><!-- END 2-COLUMN WIDGETS -->
-                    <!-- BEGIN 3-COLUMN WIDGETS --><div class="footer-widgets-3-columns clear"></div><!-- END 3-COLUMN WIDGETS -->
-                </div>
-            </div>
-            <!-- END WIDGETS -->
-
-        </div>
-
-    <!-- wp_footer -->
-
-        <!--region SLIDEOUT BUTTON -->
-        <a href="#" class="bonfire-slideout-button">
-            <!-- BEGIN ICON --><i class="fa fa-cogs"></i><!-- END ICON -->
-        </a>
-        <div class="bonfire-slideout-button-triangle-background"></div>
-        <!--endregion SLIDEOUT BUTTON -->
-
-        <!--region SLIDEOUT -->
-        <div class="bonfire-slideout">
-            <div class="bonfire-slideout-inner">
-                <div class="bonfire-slideout-inner-inner">
-
-                    <div class="bonfire-slideout-close"></div>
-
-                    <!-- BEGIN LOADING PAGE -->
-                                                                                    <!-- BEGIN CONTENT -->
-                        <div class="entry-content bonfire-slideout-content">
-                            <div style="margin: 25px 0 15px 0; color: #686262; font-size: 15px; font-family: 'Dosis'; font-weight: bold;">&#8216;CANVAS&#8217; PLUGIN INCLUDED</div>
-    <div style="margin: 0 0 45px 0; color: #fff; font-size: 50px; line-height: 50px; font-family: 'Dosis'; font-weight: 600;">THIS IS YOUR &#8216;CANVAS&#8217;</div>
-    <p>This area is intended for anything your brain can muster. Insert text, images, galleries, videos, forms, shortcodes &#8212; anything, really &#8212; and then mix, match and format them however you see fit. Add as little or as much as you’d like; a favorite quote, links to your best content, social sites, important notices&#8230; absolutely anything you need.</p>
-    <p style="margin: 30px 0 75px 0;">Or &#8212; since ‘Canvas’ is a plugin (<a href="http://codecanyon.net/item/canvas-show-any-content-in-a-fullscreen-slide/5206426?ref=BonfireThemes" target="_blank">$13 value</a>) &#8212; you can disable it completely.</p>
-    <div style="padding-left: 15px;"><div class="bonfire-columns-wrapper" style="width:33.3%;float:left;"><div class="bonfire-column"><p><span class="bonfire-image-hover"><a href="#"><img class="alignnone size-full wp-image-1779" alt="sword-bw" src="http://bonfirethemes.com/_behemoth/wp-content/uploads/2013/07/sword-bw.jpg" width="500" height="285" /></a></span><span style="font-size: 14px; font-family: 'Noticia Text'; color: #d9d2d2; letter-spacing: 1px;">MAKE IT YOUR OWN</span><br />
-    <span style="display: block; margin-top: -5px; font-size: 14px; font-family: 'Noticia Text'; color: #666; letter-spacing: 1px; line-height: 20px !important;">CUSTOMIZE NEARLY EVERYTHING</span></p></div></div><div class="bonfire-columns-wrapper" style="width:33.2%;float:left;"><div class="bonfire-column"><p><span class="bonfire-image-hover"><a href="#"><img class="alignnone size-full wp-image-1775" alt="barb-bw" src="http://bonfirethemes.com/_behemoth/wp-content/uploads/2013/07/barb-bw.jpg" width="500" height="285" /></a></span><span style="font-size: 14px; font-family: 'Noticia Text'; color: #d9d2d2; letter-spacing: 1px;">SUBLIMINAL MESSAGE</span><br />
-    <span style="display: block; margin-top: -5px; font-size: 14px; font-family: 'Noticia Text'; color: #666; letter-spacing: 1px; line-height: 20px !important;">BUY THIS THEME</span><br />
-    </p></div></div></p>
-    <div class="bonfire-columns-wrapper" style="width:33.3%;float:left;"><div class="bonfire-column"><p><span class="bonfire-image-hover"><a href="#"><img class="alignnone size-full wp-image-1777" alt="helmet-bw" src="http://bonfirethemes.com/_behemoth/wp-content/uploads/2013/07/helmet-bw.jpg" width="500" height="285" /></a></span><span style="font-size: 14px; font-family: 'Noticia Text'; color: #d9d2d2; letter-spacing: 1px;">CUSTOMIZATION</span><br />
-    <span style="display: block; margin-top: -5px; font-size: 14px; font-family: 'Noticia Text'; color: #666; letter-spacing: 1px; line-height: 20px !important;">CHANGE VIRTUALLY EVERYTHING</span><br />
-    </p></div></div>
-    <div style="clear:both"></div>
-    </div>
-
-                                <!-- BEGIN WIDGETS -->
-                                <div class="canvas-widgets-wrapper">
-                                    <div class="canvas-widgets-wrapper-inner">
-                                        <!-- BEGIN FULL WIDTH WIDGETS --><div class="canvas-widgets-1-column clear"></div><!-- END FULL WIDTH WIDGETS -->
-                                        <!-- BEGIN 2-COLUMN WIDGETS --><div class="canvas-widgets-2-columns clear"></div><!-- END 2-COLUMN WIDGETS -->
-                                        <!-- BEGIN 3-COLUMN WIDGETS --><div class="canvas-widgets-3-columns clear"></div><!-- END 3-COLUMN WIDGETS -->
-                                    </div>
-                                </div>
-                                <!-- END WIDGETS -->
-
-                        </div>
-                        <!-- END CONTENT -->
-                                        <!-- END LOADING PAGE -->
-
-                    <!-- BEGIN EDIT POST LINK -->
-                                        <!-- END EDIT POST LINK -->
-
-                </div>
-            </div>
-        </div>
-        <!--endregion SLIDEOUT -->
-
-        <script type='text/javascript' src='http://bonfirethemes.com/_behemoth/wp-content/plugins/canvas-by-bonfire/canvas.js?ver=1'></script>
-    <script type='text/javascript' src='http://bonfirethemes.com/_behemoth/wp-content/plugins/photoswipe/lib/photoswipe/lib/klass.min.js?ver=3.0.4'></script>
-    <script type='text/javascript' src='http://bonfirethemes.com/_behemoth/wp-content/plugins/photoswipe/lib/photoswipe/code.photoswipe-3.0.4.min.js?ver=3.0.4'></script>
-    <script type='text/javascript' src='http://bonfirethemes.com/_behemoth/wp-content/plugins/photoswipe/lib/psw.call.js?ver=1.0'></script>
-    <script type='text/javascript' src='http://bonfirethemes.com/_behemoth/wp-content/themes/Behemoth/js/main-menu.js?ver=1'></script>
-    <script type='text/javascript' src='http://bonfirethemes.com/_behemoth/wp-content/themes/Behemoth/js/search-toggle.js?ver=1'></script>
-    <script type='text/javascript' src='http://bonfirethemes.com/_behemoth/wp-content/themes/Behemoth/js/placeholder-fix.js?ver=1'></script>
-    <script type='text/javascript' src='http://bonfirethemes.com/_behemoth/wp-content/themes/Behemoth/js/jquery.scrollTo-min.js?ver=1'></script>
-    <script type='text/javascript' src='http://bonfirethemes.com/_behemoth/wp-includes/js/jquery/jquery.js?ver=1.10.2'></script>
-    <script type='text/javascript' src='http://bonfirethemes.com/_behemoth/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.2.1'></script>
-    <script type='text/javascript' src='http://bonfirethemes.com/_behemoth/wp-content/plugins/shortcodes-by-bonfire/shortcodes-by-bonfire.js?ver=1'></script>
-    <script type='text/javascript' src='http://bonfirethemes.com/_behemoth/wp-content/themes/Behemoth/js/accordion.js?ver=1'></script>
-    <script type='text/javascript' src='http://bonfirethemes.com/_behemoth/wp-content/themes/Behemoth/js/story-hovers.js?ver=1'></script>
-    <script type='text/javascript' src='http://bonfirethemes.com/_behemoth/wp-content/themes/Behemoth/js/empty-textarea.js?ver=1'></script>
-    <script type='text/javascript' src='http://bonfirethemes.com/_behemoth/wp-content/themes/Behemoth/js/video-container.js?ver=1'></script>
-        <!-- BootStrap - Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-    </body>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1.0">
+		<title>BEHEMOTH</title>
+		<link rel="alternate" type="application/rss+xml" title="BEHEMOTH RSS Feed" href="http://bonfirethemes.com/_behemoth/feed/">
+		<!--region-->
+		<!-- wp_header -->
+		<link rel="alternate" type="application/rss+xml" title="BEHEMOTH &raquo; Feed" href="http://bonfirethemes.com/_behemoth/feed/" />
+		<link rel="alternate" type="application/rss+xml" title="BEHEMOTH &raquo; Comments Feed" href="http://bonfirethemes.com/_behemoth/comments/feed/" />
+		<link rel='stylesheet' id='bonfire-canvas-css-css'  href='http://bonfirethemes.com/_behemoth/wp-content/plugins/canvas-by-bonfire/canvas.css?ver=1' type='text/css' media='all' />
+		<link rel='stylesheet' id='canvas-fontawesome-css'  href='http://bonfirethemes.com/_behemoth/wp-content/plugins/canvas-by-bonfire/fonts/font-awesome/css/font-awesome.min.css?ver=1' type='text/css' media='all' />
+		<link rel='stylesheet' id='bonfire-shortcodes-css'  href='http://bonfirethemes.com/_behemoth/wp-content/plugins/shortcodes-by-bonfire/shortcodes-by-bonfire.css?ver=1' type='text/css' media='all' />
+		<link rel='stylesheet' id='psw-css-css'  href='http://bonfirethemes.com/_behemoth/wp-content/plugins/photoswipe/lib/photoswipe/photoswipe.css?ver=3.8.4' type='text/css' media='all' />
+		<link rel='stylesheet' id='bonfire-fonts-css'  href='http://fonts.googleapis.com/css?family=Open+Sans%3A300%2C400%7CMontserrat%3A400%2C700%7CDosis%3A300%2C500%2C600%2C700%7CNoticia+Text%3A400italic%27+rel%3D%27stylesheet%27+type%3D%27text%2Fcss&#038;ver=3.8.4' type='text/css' media='all' />
+		<link rel='stylesheet' id='fontawesome-css'  href='BehmothFontAwesome.css' type='text/css' media='all' />
+		<link rel='stylesheet' id='style-css'  href='BehmothStyles.css' type='text/css' media='all' />
+		<link rel='stylesheet' id='media-queries-css'  href='BehmothMediaQueries.css' type='text/css' media='all' />
+		<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://bonfirethemes.com/_behemoth/xmlrpc.php?rsd" />
+		<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://bonfirethemes.com/_behemoth/wp-includes/wlwmanifest.xml" />
+		<meta name="generator" content="WordPress 3.8.4" />
+		<!-- BEGIN CUSTOM COLORS (WP THEME CUSTOMIZER) -->
+		<style>
+			/* triangle button icon color */
+			.bonfire-slideout-button { color:; }
+			/* triangle button icon hover color */
+			.bonfire-slideout-button:hover { color:; }
+			/* triangle button background */
+			.bonfire-slideout-button-triangle-background { border-bottom-color:; }
+			/* canvas background color */
+			.bonfire-slideout { background-color:; }
+			/* text color */
+			.bonfire-slideout-content, .bonfire-slideout-content p, .canvas-widgets-1-column .widget, .canvas-widgets-2-columns .widget, .canvas-widgets-3-columns .widget { color:; }
+			/* link color */
+			.bonfire-slideout-content a, .bonfire-slideout-content p a, .canvas-widgets-1-column .widget a, .canvas-widgets-2-columns .widget a, .canvas-widgets-3-columns .widget a { color:; }
+			/* link hover color */
+			.bonfire-slideout-content a:hover, .bonfire-slideout-content p a:hover, .canvas-widgets-1-column .widget a:hover, .canvas-widgets-2-columns .widget a:hover, .canvas-widgets-3-columns .widget a:hover { color:; }
+			/* widget title color */
+			.canvas-widgets-1-column .widget .widgettitle, .canvas-widgets-2-columns .widget .widgettitle, .canvas-widgets-3-columns .widget  .widgettitle { color:; }
+		</style>
+		<!-- END CUSTOM COLORS (WP THEME CUSTOMIZER) -->
+		<!--endregion-->
+		<!--region Bootstrap references-->
+		<!-- Bootstrap - Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+		<!-- Bootstrap - Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+		<!--endregion>
+			</head>
+			
+			<body class="home blog">
+			
+			<!--region BEGIN THEME CUSTOMIZATION (in WP backend) -->
+		<!-- BEGIN CUSTOM COLORS (WP THEME CUSTOMIZER) -->
+		<style>
+			#header-wrapper { background-color:; }
+			.site-logo, .site-logo a { color:; }
+			.menu-button:hover .site-logo, .menu-button:hover .site-logo a { color:; }
+			.post-title, .page-title, .post-title a, .page-title a, .light .post-title, .light .page-title, .light .post-title a, .light .page-title a, .lighter .post-title, .lighter .page-title, .lighter .post-title a, .lighter .page-title a { color:; }
+			.post-title a:hover, .page-title a:hover, .light .post-title a:hover, .light .page-title a:hover, .lighter .post-title a:hover, .lighter .page-title a:hover { color:; }
+			.entry-content a { color:; }
+			.entry-content a:hover { color:; }
+			#respond, #respond #cancel-comment-reply-link { background-color:; }
+			#respond #submit { background-color:; }
+			.read-leave-comments { color:; border-color:; }
+			.read-leave-comments:hover { background-color: !important; border-color: !important; }
+			.post-meta-author-date { color:; border-color:; }
+			.post-meta-author-date:hover { background-color:; border-color:; }
+			.post-meta-tags { color:; border-color:; }
+			.post-meta-tags:hover { background-color:; border-color:; }
+			#footer { background-color:; }
+			.commentwrap { background-color:; }
+			#contactform-wrapper { background-color:#085a49; }
+			#contact-submit { background-color:; }
+			.menu-button { background-color:; }
+			.menu-button-hover-touch, .menu-button-hover { background-color: !important; }
+		</style>
+		<!-- END CUSTOM COLORS (WP THEME CUSTOMIZER) -->
+		<!--endregion END THEME CUSTOMIZATION (in WP backend) -->
+		<!--region BEGIN MENU BAR -->
+		<div id="header-wrapper">
+			<!-- BEGIN MENU BUTTON -->
+			<div class="menu-button">
+				<!-- BEGIN SITE NAME -->
+				<div class="site-logo">BEHEMOTH</div>
+				<!-- END SITE NAME -->
+			</div>
+			<!-- END MENU BUTTON -->
+			<!-- BEGIN ICON MENU -->
+			<div class="bonfire-icon-menu">
+				<ul id="menu-icon-menu" class="menu">
+					<li id="menu-item-1547" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1547"><a href="http://dribbble.com/Bonfire"><i class="fa fa-dribbble"></i></a></li>
+					<li id="menu-item-1366" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1366"><a href="#"><i class="fa fa-google-plus"></i></a></li>
+					<li id="menu-item-1925" class="blue menu-item menu-item-type-custom menu-item-object-custom menu-item-1925"><a href="#"><i class="fa fa-skype"></i></a></li>
+				</ul>
+			</div>
+			<!-- END ICON MENU -->
+			<!-- BEGIN SEARCH BUTTON + SEARCH FORM -->
+			<!-- BEGIN SEARCH BUTTON -->
+			<div id="header-search"><i class="fa fa-search"></i></div>
+			<!-- END SEARCH BUTTON -->
+			<!-- BEGIN SEARCH FORM --><!-- BEGIN SEARCH FORM -->
+			<div class="searchform-wrapper">
+				<!-- BEGIN SEARCH FORM CLOSE BUTTON-->
+				<div id="searchform-close"></div>
+				<!-- END SEARCH FORM CLOSE BUTTON-->
+				<form method="get" id="searchform" action="http://bonfirethemes.com/_behemoth/">
+					<input type="text" name="s" id="s" placeholder="find something..">
+				</form>
+			</div>
+			<!-- END SEARCH FORM --><!-- END SEARCH FORM -->
+			<!-- END SEARCH BUTTON + SEARCH FORM -->
+		</div>
+		<!--endregion END MENU BAR -->
+		<!--region BEGIN ACCORDION MENU -->
+		<div id="menu">
+			<div class="menu01">
+				<ul id="menu-main-menu" class="menu">
+					<li id="menu-item-5" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-5"><a href="http://bonfirethemes.com/_behemoth/"><i class="fa fa-power-off"></i> THE BLOG</a></li>
+					<li id="menu-item-1651" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1651"><a href="http://bonfirethemes.com/_behemoth/features/"><i class="fa fa-compass"></i> FEATURES</a></li>
+					<li id="menu-item-9" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9"><a href="http://bonfirethemes.com/_behemoth/shortcodes/"><i class="fa fa-code"></i> SHORTCODES</a></li>
+					<li id="menu-item-1949" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1949"><a href="http://bonfirethemes.com/_behemoth/2013/08/07/gallery/"><i class="fa fa-camera-retro"></i> GALLERY</a></li>
+					<li id="menu-item-7" class="sub second menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-7">
+						<a><i class="fa fa-desktop"></i> MISC</a>
+						<ul class="sub-menu">
+							<li id="menu-item-11" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-11"><a href="http://bonfirethemes.com/_behemoth/formatting/"><i class="fa fa-align-left"></i> FORMATTING</a></li>
+							<li id="menu-item-12" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12"><a href="http://bonfirethemes.com/_behemoth/archive/"><i class="fa fa-calendar"></i>ARCHIVE</a></li>
+							<li id="menu-item-13" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-13"><a href="http://bonfirethemes.com/_behemoth/404/"><i class="fa fa-times-circle"></i>404 PAGE</a></li>
+						</ul>
+					</li>
+					<li id="menu-item-10" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10"><a href="http://bonfirethemes.com/_behemoth/get-in-touch/"><i class="fa fa-map-marker"></i> GET IN TOUCH</a></li>
+					<li id="menu-item-8" class="threecolumns salmon menu-item menu-item-type-custom menu-item-object-custom menu-item-8"><a href="http://themeforest.net/item/behemoth-reshape-your-blog/5355556/?ref=BonfireThemes"><i class="fa fa-heart-o"></i> PURCHASE THIS THEME</a></li>
+				</ul>
+			</div>
+		</div>
+		<!--endregion END ACCORDION MENU -->
+		<div id="sitewrap">
+			<div id="body" class="pagewidth clearfix">
+				<div id="content" class="clearfix">
+					<div class="dark-image" style="background-image: url(http://i.imgur.com/JWMaD3w.jpg);background-size:cover;background-repeat:no-repeat;background-position:50% 40%;z-index:-1;">
+						<div class="post-background-opacity green">
+							<div class="featured-image-toggle-wrapper">
+								<a href="#">
+									<div class="featured-image-toggle"></div>
+								</a>
+							</div>
+							<div class="content-wrapper">
+								<article id="post-44" class="post-44 post type-post status-publish format-quote sticky hentry category-uncategorized tag-nathan-drake tag-uncharted">
+									<!-- BEGIN TITLE -->
+									<h1 class="post-title">
+										<a href="http://bonfirethemes.com/_behemoth/2013/08/02/quote-post/" title="Permalink to Quote post" rel="bookmark">
+										Quote post			</a>
+									</h1>
+									<!-- END TITLE -->
+									<!-- BEGIN TITLE SPACER IMAGE -->
+									<div class="title-spacer"></div>
+									<!-- END TITLE SPACER IMAGE -->
+									<!-- BEGIN CONTENT -->
+									<div class="entry-content">
+										<blockquote style="border-left: 5px">
+											<p>&#8221;I didn't want that freigther anyways &#8220;</p>
+										</blockquote>
+										<p>Someone losing in eve online</p>
+									</div>
+									<!-- END CONTENT -->
+									<!-- BEGIN AUTHOR + DATE + TAGS WRAPPER -->
+									<!-- END AUTHOR + DATE + TAGS WRAPPER -->
+									<!-- BEGIN POST NAVIGATION -->
+									<div class="link-pages">
+									</div>
+									<!-- END POST NAVIGATION -->
+									<!-- BEGIN EDIT POST LINK -->
+									<!-- END EDIT POST LINK -->
+								</article>
+							</div>
+						</div>
+					</div>
+					<!--region Post-->
+					<div class="darker ">
+						<div class="content-wrapper">
+							<article id="post-32" class="post-32 post type-post status-publish format-standard hentry category-uncategorized tag-bonfire tag-standard-post">
+								<!-- BEGIN TITLE -->
+								<h1 class="post-title">
+									<a href="http://bonfirethemes.com/_behemoth/2013/08/07/behemoth-reshape-your-wordpress-blog/" title="Permalink to &#8216;Behemoth&#8217; &#8211; reshape your WordPress blog" rel="bookmark">
+									&#8216;Behemoth&#8217; &#8211; reshape your WordPress blog			</a>
+								</h1>
+								<!-- END TITLE -->
+								<!-- BEGIN TITLE SPACER IMAGE -->
+								<div class="title-spacer"></div>
+								<!-- END TITLE SPACER IMAGE -->
+								<!-- BEGIN CONTENT -->
+								<div class="entry-content">
+									<p>This is the standard post in its purest form; only text and a clear dark background. As can be seen from all the different post examples though, you can beef it up with a background color and/or image, and potentially make every post utterly unique. It&#8217;s completely up to you how deep you want to go.</p>
+								</div>
+								<!-- END CONTENT -->
+								<!-- BEGIN AUTHOR + DATE + TAGS WRAPPER -->
+								<!-- END AUTHOR + DATE + TAGS WRAPPER -->
+								<!-- BEGIN POST NAVIGATION -->
+								<div class="link-pages">
+								</div>
+								<!-- END POST NAVIGATION -->
+								<!-- BEGIN EDIT POST LINK -->
+								<!-- END EDIT POST LINK -->
+							</article>
+						</div>
+					</div>
+					<!--endregion-->
+					<div class="dark ">
+						<div class="content-wrapper">
+							<article id="post-63" class="post-63 post type-post status-publish format-gallery hentry category-uncategorized tag-gallery tag-photoswipe">
+								<!-- BEGIN TITLE -->
+								<h1 class="post-title">
+									<a href="http://bonfirethemes.com/_behemoth/2013/08/07/gallery/" title="Permalink to Gallery software ready for touch devices" rel="bookmark">
+									Gallery software ready for touch devices			</a>
+								</h1>
+								<!-- END TITLE -->
+								<!-- BEGIN TITLE SPACER IMAGE -->
+								<div class="title-spacer"></div>
+								<!-- END TITLE SPACER IMAGE -->
+								<!-- BEGIN CONTENT -->
+								<div class="entry-content">
+									<style type='text/css'>
+										#gallery-1 {
+										margin: auto;
+										}
+										#gallery-1 .gallery-item {
+										float: left;
+										margin-top: 10px;
+										text-align: center;
+										width: 33%;
+										}
+										#gallery-1 img {
+										border: 2px solid #cfcfcf;
+										}
+										#gallery-1 .gallery-caption {
+										margin-left: 0;
+										}
+										/* see gallery_shortcode() in wp-includes/media.php */
+									</style>
+									<div id='gallery-1' class='gallery galleryid-63 gallery-columns-3 gallery-size-thumbnail'>
+										<dl class='gallery-item'>
+											<dt class='gallery-icon landscape'>
+												<a href='http://bonfirethemes.com/_behemoth/wp-content/uploads/2013/08/gallery_01.jpg'><img width="500" height="285" src="http://bonfirethemes.com/_behemoth/wp-content/uploads/2013/08/gallery_01-500x285.jpg" class="attachment-thumbnail" alt="gallery_01" /></a>
+											</dt>
+										</dl>
+										<dl class='gallery-item'>
+											<dt class='gallery-icon landscape'>
+												<a href='http://bonfirethemes.com/_behemoth/wp-content/uploads/2013/08/gallery_02.jpg'><img width="500" height="285" src="http://bonfirethemes.com/_behemoth/wp-content/uploads/2013/08/gallery_02-500x285.jpg" class="attachment-thumbnail" alt="gallery_02" /></a>
+											</dt>
+										</dl>
+										<dl class='gallery-item'>
+											<dt class='gallery-icon landscape'>
+												<a href='http://bonfirethemes.com/_behemoth/wp-content/uploads/2013/07/helmet-bw.jpg'><img width="500" height="285" src="http://bonfirethemes.com/_behemoth/wp-content/uploads/2013/07/helmet-bw.jpg" class="attachment-thumbnail" alt="helmet-bw" /></a>
+											</dt>
+										</dl>
+										<br style="clear: both" />
+										<dl class='gallery-item'>
+											<dt class='gallery-icon portrait'>
+												<a href='http://bonfirethemes.com/_behemoth/wp-content/uploads/2013/05/axe-full.jpg'><img width="500" height="285" src="http://bonfirethemes.com/_behemoth/wp-content/uploads/2013/05/axe-full-500x285.jpg" class="attachment-thumbnail" alt="axe-full" /></a>
+											</dt>
+										</dl>
+										<dl class='gallery-item'>
+											<dt class='gallery-icon landscape'>
+												<a href='http://bonfirethemes.com/_behemoth/wp-content/uploads/2013/08/gallery_05.jpg'><img width="500" height="285" src="http://bonfirethemes.com/_behemoth/wp-content/uploads/2013/08/gallery_05-500x285.jpg" class="attachment-thumbnail" alt="gallery_05" /></a>
+											</dt>
+										</dl>
+										<dl class='gallery-item'>
+											<dt class='gallery-icon landscape'>
+												<a href='http://bonfirethemes.com/_behemoth/wp-content/uploads/2013/08/gallery_06.jpg'><img width="500" height="285" src="http://bonfirethemes.com/_behemoth/wp-content/uploads/2013/08/gallery_06-500x285.jpg" class="attachment-thumbnail" alt="gallery_06" /></a>
+											</dt>
+										</dl>
+										<br style="clear: both" />
+										<br style='clear: both;' />
+									</div>
+									<p style="text-align: left;">
+								</div>
+								<!-- END CONTENT -->
+								<!-- BEGIN AUTHOR + DATE + TAGS WRAPPER -->
+								<!-- END AUTHOR + DATE + TAGS WRAPPER -->
+								<!-- BEGIN POST NAVIGATION -->
+								<div class="link-pages">
+								</div>
+								<!-- END POST NAVIGATION -->
+								<!-- BEGIN EDIT POST LINK -->
+								<!-- END EDIT POST LINK -->
+							</article>
+						</div>
+					</div>
+					<div class="darker-image" style="background-image: url(http://bonfirethemes.com/_behemoth/wp-content/uploads/2013/08/battlefield_4_china_rising-wide.jpg);background-size:cover;background-repeat:no-repeat;background-position:top center;z-index:-1;">
+						<!-- END ALTERNATE POST BACKGROUND COLOR + FEATURED IMAGE AS BACKGROUND -->
+						<!-- BEGIN DIV WRAPPER IF FEATURED IMAGE USED -->
+						<div class="post-background-opacity ">
+							<!-- BEGIN TOGGLE SHOW/HIDE CONTENT IF FEATURED IMAGE USED -->
+							<div class="featured-image-toggle-wrapper">
+								<a href="#">
+									<div class="featured-image-toggle"></div>
+								</a>
+							</div>
+							<!-- END TOGGLE SHOW/HIDE CONTENT IF FEATURED IMAGE USED -->
+							<!-- END DIV WRAPPER IF FEATURED IMAGE USED -->
+							<div class="content-wrapper">
+								<article id="post-1860" class="post-1860 post type-post status-publish format-video hentry category-uncategorized tag-bonfire tag-video-post">
+									<!-- BEGIN TITLE -->
+									<h1 class="post-title">
+										<a href="http://bonfirethemes.com/_behemoth/2013/08/07/a-quick-video-post-with-a-background-image-pew-pew/" title="Permalink to A quick video post with a background image&#8230; pew pew." rel="bookmark">
+										A quick video post with a background image&#8230; pew pew.			</a>
+									</h1>
+									<!-- END TITLE -->
+									<!-- BEGIN TITLE SPACER IMAGE -->
+									<div class="title-spacer"></div>
+									<!-- END TITLE SPACER IMAGE -->
+									<!-- BEGIN CONTENT -->
+									<div class="entry-content">
+										<div class="post-video"><iframe src="http://player.vimeo.com/video/68128762" width="1000" height="563" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div>
+									</div>
+									<!-- END CONTENT -->
+									<!-- BEGIN AUTHOR + DATE + TAGS WRAPPER -->
+									<!-- END AUTHOR + DATE + TAGS WRAPPER -->
+									<!-- BEGIN POST NAVIGATION -->
+									<div class="link-pages">
+									</div>
+									<!-- END POST NAVIGATION -->
+									<!-- BEGIN EDIT POST LINK -->
+									<!-- END EDIT POST LINK -->
+								</article>
+							</div>
+							<!-- /.content-wrapper -->
+							<!-- BEGIN DIV WRAPPER IF FEATURED IMAGE USED -->
+						</div>
+						<!-- END DIV WRAPPER IF FEATURED IMAGE USED -->
+					</div>
+					<div class="dark ">
+						<!-- END ALTERNATE POST BACKGROUND COLOR + FEATURED IMAGE AS BACKGROUND -->
+						<!-- BEGIN DIV WRAPPER IF FEATURED IMAGE USED -->
+						<!-- END DIV WRAPPER IF FEATURED IMAGE USED -->
+						<div class="content-wrapper">
+							<article id="post-172" class="post-172 post type-post status-publish format-link hentry category-uncategorized tag-link-post">
+								<!-- BEGIN TITLE -->
+								<h1 class="post-title">
+									<a href="http://bonfirethemes.com/_behemoth/2013/08/07/link-post/" title="Permalink to Link post" rel="bookmark">
+									Link post			</a>
+								</h1>
+								<!-- END TITLE -->
+								<!-- BEGIN TITLE SPACER IMAGE -->
+								<div class="title-spacer"></div>
+								<!-- END TITLE SPACER IMAGE -->
+								<!-- BEGIN CONTENT -->
+								<div class="entry-content">
+									<p>I found <a href="#">this terrific link</a> today, don’t miss it!</p>
+								</div>
+								<!-- END CONTENT -->
+								<!-- BEGIN AUTHOR + DATE + TAGS WRAPPER -->
+								<!-- END AUTHOR + DATE + TAGS WRAPPER -->
+								<!-- BEGIN POST NAVIGATION -->
+								<div class="link-pages">
+								</div>
+								<!-- END POST NAVIGATION -->
+								<!-- BEGIN EDIT POST LINK -->
+								<!-- END EDIT POST LINK -->
+							</article>
+						</div>
+						<!-- /.content-wrapper -->
+						<!-- BEGIN DIV WRAPPER IF FEATURED IMAGE USED -->
+						<!-- END DIV WRAPPER IF FEATURED IMAGE USED -->
+					</div>
+					<div class="darker ">
+						<!-- END ALTERNATE POST BACKGROUND COLOR + FEATURED IMAGE AS BACKGROUND -->
+						<!-- BEGIN DIV WRAPPER IF FEATURED IMAGE USED -->
+						<!-- END DIV WRAPPER IF FEATURED IMAGE USED -->
+						<div class="content-wrapper">
+							<article id="post-1" class="post-1 post type-post status-publish format-aside hentry category-uncategorized tag-naughty-dog tag-the-last-of-us">
+								<!-- BEGIN TITLE -->
+								<h1 class="post-title">
+									<a href="http://bonfirethemes.com/_behemoth/2013/08/06/aside-post-format/" title="Permalink to Aside post format" rel="bookmark">
+									Aside post format			</a>
+								</h1>
+								<!-- END TITLE -->
+								<!-- BEGIN TITLE SPACER IMAGE -->
+								<div class="title-spacer"></div>
+								<!-- END TITLE SPACER IMAGE -->
+								<!-- BEGIN CONTENT -->
+								<div class="entry-content">
+									<p>Do you have some quick, title-less thoughts you’d like to put down? That’s what this aside post format is for. With a different typography when compared to the standard post, it’s clear that this is for the short story teller in all of us. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam.</p>
+								</div>
+								<!-- END CONTENT -->
+								<!-- BEGIN AUTHOR + DATE + TAGS WRAPPER -->
+								<!-- END AUTHOR + DATE + TAGS WRAPPER -->
+								<!-- BEGIN POST NAVIGATION -->
+								<div class="link-pages">
+								</div>
+								<!-- END POST NAVIGATION -->
+								<!-- BEGIN EDIT POST LINK -->
+								<!-- END EDIT POST LINK -->
+							</article>
+						</div>
+						<!-- /.content-wrapper -->
+						<!-- BEGIN DIV WRAPPER IF FEATURED IMAGE USED -->
+						<!-- END DIV WRAPPER IF FEATURED IMAGE USED -->
+					</div>
+					<div class="dark-image" style="background-image: url(http://bonfirethemes.com/_behemoth/wp-content/uploads/2013/06/tlou_bw.jpg);background-size:cover;background-repeat:no-repeat;background-position:top center;z-index:-1;">
+						<!-- END ALTERNATE POST BACKGROUND COLOR + FEATURED IMAGE AS BACKGROUND -->
+						<!-- BEGIN DIV WRAPPER IF FEATURED IMAGE USED -->
+						<div class="post-background-opacity blue">
+							<!-- BEGIN TOGGLE SHOW/HIDE CONTENT IF FEATURED IMAGE USED -->
+							<div class="featured-image-toggle-wrapper">
+								<a href="#">
+									<div class="featured-image-toggle"></div>
+								</a>
+							</div>
+							<!-- END TOGGLE SHOW/HIDE CONTENT IF FEATURED IMAGE USED -->
+							<!-- END DIV WRAPPER IF FEATURED IMAGE USED -->
+							<div class="content-wrapper">
+								<article id="post-176" class="post-176 post type-post status-publish format-status hentry category-uncategorized tag-naughty-dog tag-the-last-of-us">
+									<!-- BEGIN TITLE -->
+									<h1 class="post-title">
+										<a href="http://bonfirethemes.com/_behemoth/2013/08/06/status-post/" title="Permalink to Status post" rel="bookmark">
+										Status post			</a>
+									</h1>
+									<!-- END TITLE -->
+									<!-- BEGIN TITLE SPACER IMAGE -->
+									<div class="title-spacer"></div>
+									<!-- END TITLE SPACER IMAGE -->
+									<!-- BEGIN CONTENT -->
+									<div class="entry-content">
+										<p>Started playing The Last of Us on my PS3. The game is beyond amazing; a fantastic offering from Naughty Dog while they give Nate a deserved break.</p>
+										<p>&nbsp;</p>
+									</div>
+									<!-- END CONTENT -->
+									<!-- BEGIN AUTHOR + DATE + TAGS WRAPPER -->
+									<!-- END AUTHOR + DATE + TAGS WRAPPER -->
+									<!-- BEGIN POST NAVIGATION -->
+									<div class="link-pages">
+									</div>
+									<!-- END POST NAVIGATION -->
+									<!-- BEGIN EDIT POST LINK -->
+									<!-- END EDIT POST LINK -->
+								</article>
+							</div>
+							<!-- /.content-wrapper -->
+							<!-- BEGIN DIV WRAPPER IF FEATURED IMAGE USED -->
+						</div>
+						<!-- END DIV WRAPPER IF FEATURED IMAGE USED -->
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="footer">
+			<!-- BEGIN INCLUDE PAGINATION -->
+			<!-- BEGIN NEXT PAGE, PREV PAGE -->						
+			<div class="post-nav">
+				<div class="prev-inactive"></div>
+				<div class="next-inactive">
+					<a href="http://bonfirethemes.com/_behemoth/page/2/" >
+						<div class="next"></div>
+					</a>
+				</div>
+			</div>
+			<!-- END NEXT PAGE, PREV PAGE -->		<!-- END INCLUDE PAGINATION -->
+			<!-- BEGIN WIDGETS -->
+			<div class="footer-widgets-wrapper">
+				<div class="footer-widgets-wrapper-inner">
+					<!-- BEGIN FULL WIDTH WIDGETS -->
+					<div class="footer-widgets-1-column">
+						<div id="text-4" class="widget widget_text">
+							<div class="textwidget">
+								<div style="text-align:center;margin-bottom:20px;">The footer area here is fully widgetized, with widgets appearing in one, two, as well as three columns. Insert as many as you’d like, or none at all; it’s completely up to you.</div>
+							</div>
+						</div>
+					</div>
+					<!-- END FULL WIDTH WIDGETS -->
+					<!-- BEGIN 2-COLUMN WIDGETS -->
+					<div class="footer-widgets-2-columns clear"></div>
+					<!-- END 2-COLUMN WIDGETS -->
+					<!-- BEGIN 3-COLUMN WIDGETS -->
+					<div class="footer-widgets-3-columns clear"></div>
+					<!-- END 3-COLUMN WIDGETS -->
+				</div>
+			</div>
+			<!-- END WIDGETS -->
+		</div>
+		<!-- wp_footer -->
+		<!--region SLIDEOUT BUTTON -->
+		<a href="#" class="bonfire-slideout-button">
+			<!-- BEGIN ICON --><i class="fa fa-cogs"></i><!-- END ICON -->
+		</a>
+		<div class="bonfire-slideout-button-triangle-background"></div>
+		<!--endregion SLIDEOUT BUTTON -->
+		<!--region SLIDEOUT -->
+		<div class="bonfire-slideout">
+			<div class="bonfire-slideout-inner">
+				<div class="bonfire-slideout-inner-inner">
+					<div class="bonfire-slideout-close"></div>
+					<!-- BEGIN LOADING PAGE -->
+					<!-- BEGIN CONTENT -->
+					<div class="entry-content bonfire-slideout-content">
+						<div style="margin: 25px 0 15px 0; color: #686262; font-size: 15px; font-family: 'Dosis'; font-weight: bold;">&#8216;CANVAS&#8217; PLUGIN INCLUDED</div>
+						<div style="margin: 0 0 45px 0; color: #fff; font-size: 50px; line-height: 50px; font-family: 'Dosis'; font-weight: 600;">THIS IS YOUR &#8216;CANVAS&#8217;</div>
+						<p>This area is intended for anything your brain can muster. Insert text, images, galleries, videos, forms, shortcodes &#8212; anything, really &#8212; and then mix, match and format them however you see fit. Add as little or as much as you’d like; a favorite quote, links to your best content, social sites, important notices&#8230; absolutely anything you need.</p>
+						<p style="margin: 30px 0 75px 0;">Or &#8212; since ‘Canvas’ is a plugin (<a href="http://codecanyon.net/item/canvas-show-any-content-in-a-fullscreen-slide/5206426?ref=BonfireThemes" target="_blank">$13 value</a>) &#8212; you can disable it completely.</p>
+						<div style="padding-left: 15px;">
+							<div class="bonfire-columns-wrapper" style="width:33.3%;float:left;">
+								<div class="bonfire-column">
+									<p><span class="bonfire-image-hover"><a href="#"><img class="alignnone size-full wp-image-1779" alt="sword-bw" src="http://bonfirethemes.com/_behemoth/wp-content/uploads/2013/07/sword-bw.jpg" width="500" height="285" /></a></span><span style="font-size: 14px; font-family: 'Noticia Text'; color: #d9d2d2; letter-spacing: 1px;">MAKE IT YOUR OWN</span><br />
+										<span style="display: block; margin-top: -5px; font-size: 14px; font-family: 'Noticia Text'; color: #666; letter-spacing: 1px; line-height: 20px !important;">CUSTOMIZE NEARLY EVERYTHING</span>
+									</p>
+								</div>
+							</div>
+							<div class="bonfire-columns-wrapper" style="width:33.2%;float:left;">
+								<div class="bonfire-column">
+									<p><span class="bonfire-image-hover"><a href="#"><img class="alignnone size-full wp-image-1775" alt="barb-bw" src="http://bonfirethemes.com/_behemoth/wp-content/uploads/2013/07/barb-bw.jpg" width="500" height="285" /></a></span><span style="font-size: 14px; font-family: 'Noticia Text'; color: #d9d2d2; letter-spacing: 1px;">SUBLIMINAL MESSAGE</span><br />
+										<span style="display: block; margin-top: -5px; font-size: 14px; font-family: 'Noticia Text'; color: #666; letter-spacing: 1px; line-height: 20px !important;">BUY THIS THEME</span><br />
+									</p>
+								</div>
+							</div>
+							</p>
+							<div class="bonfire-columns-wrapper" style="width:33.3%;float:left;">
+								<div class="bonfire-column">
+									<p><span class="bonfire-image-hover"><a href="#"><img class="alignnone size-full wp-image-1777" alt="helmet-bw" src="http://bonfirethemes.com/_behemoth/wp-content/uploads/2013/07/helmet-bw.jpg" width="500" height="285" /></a></span><span style="font-size: 14px; font-family: 'Noticia Text'; color: #d9d2d2; letter-spacing: 1px;">CUSTOMIZATION</span><br />
+										<span style="display: block; margin-top: -5px; font-size: 14px; font-family: 'Noticia Text'; color: #666; letter-spacing: 1px; line-height: 20px !important;">CHANGE VIRTUALLY EVERYTHING</span><br />
+									</p>
+								</div>
+							</div>
+							<div style="clear:both"></div>
+						</div>
+						<!-- BEGIN WIDGETS -->
+						<div class="canvas-widgets-wrapper">
+							<div class="canvas-widgets-wrapper-inner">
+								<!-- BEGIN FULL WIDTH WIDGETS -->
+								<div class="canvas-widgets-1-column clear"></div>
+								<!-- END FULL WIDTH WIDGETS -->
+								<!-- BEGIN 2-COLUMN WIDGETS -->
+								<div class="canvas-widgets-2-columns clear"></div>
+								<!-- END 2-COLUMN WIDGETS -->
+								<!-- BEGIN 3-COLUMN WIDGETS -->
+								<div class="canvas-widgets-3-columns clear"></div>
+								<!-- END 3-COLUMN WIDGETS -->
+							</div>
+						</div>
+						<!-- END WIDGETS -->
+					</div>
+					<!-- END CONTENT -->
+					<!-- END LOADING PAGE -->
+					<!-- BEGIN EDIT POST LINK -->
+					<!-- END EDIT POST LINK -->
+				</div>
+			</div>
+		</div>
+		<!--endregion SLIDEOUT -->
+		<script type='text/javascript' src='http://bonfirethemes.com/_behemoth/wp-content/plugins/canvas-by-bonfire/canvas.js?ver=1'></script>
+		<script type='text/javascript' src='http://bonfirethemes.com/_behemoth/wp-content/plugins/photoswipe/lib/photoswipe/lib/klass.min.js?ver=3.0.4'></script>
+		<script type='text/javascript' src='http://bonfirethemes.com/_behemoth/wp-content/plugins/photoswipe/lib/photoswipe/code.photoswipe-3.0.4.min.js?ver=3.0.4'></script>
+		<script type='text/javascript' src='http://bonfirethemes.com/_behemoth/wp-content/plugins/photoswipe/lib/psw.call.js?ver=1.0'></script>
+		<script type='text/javascript' src='http://bonfirethemes.com/_behemoth/wp-content/themes/Behemoth/js/main-menu.js?ver=1'></script>
+		<script type='text/javascript' src='http://bonfirethemes.com/_behemoth/wp-content/themes/Behemoth/js/search-toggle.js?ver=1'></script>
+		<script type='text/javascript' src='http://bonfirethemes.com/_behemoth/wp-content/themes/Behemoth/js/placeholder-fix.js?ver=1'></script>
+		<script type='text/javascript' src='http://bonfirethemes.com/_behemoth/wp-content/themes/Behemoth/js/jquery.scrollTo-min.js?ver=1'></script>
+		<script type='text/javascript' src='http://bonfirethemes.com/_behemoth/wp-includes/js/jquery/jquery.js?ver=1.10.2'></script>
+		<script type='text/javascript' src='http://bonfirethemes.com/_behemoth/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.2.1'></script>
+		<script type='text/javascript' src='http://bonfirethemes.com/_behemoth/wp-content/plugins/shortcodes-by-bonfire/shortcodes-by-bonfire.js?ver=1'></script>
+		<script type='text/javascript' src='http://bonfirethemes.com/_behemoth/wp-content/themes/Behemoth/js/accordion.js?ver=1'></script>
+		<script type='text/javascript' src='http://bonfirethemes.com/_behemoth/wp-content/themes/Behemoth/js/story-hovers.js?ver=1'></script>
+		<script type='text/javascript' src='http://bonfirethemes.com/_behemoth/wp-content/themes/Behemoth/js/empty-textarea.js?ver=1'></script>
+		<script type='text/javascript' src='http://bonfirethemes.com/_behemoth/wp-content/themes/Behemoth/js/video-container.js?ver=1'></script>
+		<!-- BootStrap - Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+		</body>
 </html>

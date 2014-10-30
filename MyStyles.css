@@ -94,7 +94,7 @@ dark-highlight-mouse-over {
 /* Retina display .featured-image-toggle */
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
        only screen and (min--moz-device-pixel-ratio: 1.5),
-       only screen and (min-resolution: 240dpi)
+       only screen and (min-resolution: 240dpi)```````````````````
 {
 .featured-image-toggle { background-size: 36px 36px; background:url(images/featured-image-toggle@2x.png) no-repeat center center; background-color:rgba(0,0,0,0) !important; }
 }
@@ -112,7 +112,7 @@ dark-highlight-mouse-over {
 	-moz-transition: all .25s ease;
 	-o-transition: all .25s ease;
 	-ms-transition: all .25s ease;
-	transition: all .25s ease;
+	transition: all .25s ease;````````````````````````````````````````
 	
 	background-color:rgba(0,0,0,0) !important;
 }
@@ -263,6 +263,7 @@ STRUCTURE
 /* post, page titles */
 .post-title, .page-title, .post-title a, .page-title a {
 	font-family:'Dosis';
+    src:url("Fonts/Dosis-SemiBold.otf") format("opentype");
 	font-weight:500;
 	font-size:40px;
 	line-height:40px;
@@ -295,4 +296,47 @@ STRUCTURE
 
 .page-title-centered {
 	text-align:left;
+}
+
+.TestingGitChange {
+    backface-visibility: hidden
+}
+
+/* Format quote */
+.light .format-quote .entry-content p, .lighter .format-quote .entry-content p {
+	text-transform: uppercase;
+}
+/*** QUOTE  ***/
+.format-quote {
+	text-transform: uppercase;
+}
+.format-quote .entry-content, .format-quote .excerpt, .format-quote .entry-content p {
+	font-family:'Dosis';
+    src: url("Fonts/Dosis-SemiBold.otf") format("opentype");
+	font-weight:700;
+	font-size:25px;
+    text-align: center;
+	color:rgba(255,255,255,0.4);
+}
+.format-quote .entry-content blockquote, .format-quote .entry-content blockquote p {
+	font-weight:600;
+	color:#fff;
+	font-size:40px;
+	line-height:43px;
+	font-style:normal;
+	margin:0 0 15px 0;
+	padding:0;
+}
+
+.content-wrapper {
+	max-width:1000px;
+	margin:0 auto;
+	padding:0 17px;
+}
+.post {
+	margin:0 0 0 0;
+	padding:100px 0 70px 0;
+}
+ article { 
+    display: block;
 }
