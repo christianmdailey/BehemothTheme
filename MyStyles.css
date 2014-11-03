@@ -340,3 +340,10 @@ STRUCTURE
  article { 
     display: block;
 }
+
+.thumbnail {
+    height: 50px;
+    width: 50px;
+    
+
+}

@@ -9,6 +9,12 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="MyStyles.css">
         <link rel="stylesheet" href="FooterStyles.css">
+        <!--region Gallery-->
+        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//blueimp.github.io/Gallery/css/blueimp-gallery.min.css">
+        <link rel="stylesheet" href="css/bootstrap-image-gallery.min.css">
+        <!--endregion-->
+        
     </head>
     <body>
         <header>
@@ -95,6 +101,62 @@
                     </div>
                 </div>
                 <!--endregion-->
+                <!--region Post-->
+                <div class="darker ">
+                    <div class="content-wrapper">
+                        <article class="post">
+                            <h1 class="post-title">
+                                <a href="http://bonfirethemes.com/_behemoth/2013/08/07/behemoth-reshape-your-wordpress-blog/" title="Permalink to &#8216;Behemoth&#8217; &#8211; reshape your WordPress blog" rel="bookmark">Picture Gallery</a>
+                            </h1>
+                            <div class="title-spacer"></div>
+                                <div id="blueimp-gallery" class="blueimp-gallery">
+                                    <!-- The container for the modal slides -->
+                                    <div class="slides"></div>
+                                    <!-- Controls for the borderless lightbox -->
+                                    <h3 class="title"></h3>
+                                    <a class="prev">‹</a>
+                                    <a class="next">›</a>
+                                    <a class="close">×</a>
+                                    <a class="play-pause"></a>
+                                    <ol class="indicator"></ol>
+                                    <!-- The modal dialog, which will be used to wrap the lightbox content -->
+                                    <div class="modal fade">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <button type="button" class="close" aria-hidden="true">&times;</button>
+                                                    <h4 class="modal-title"></h4>
+                                                </div>
+                                                <div class="modal-body next"></div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-default pull-left prev">
+                                                        <i class="glyphicon glyphicon-chevron-left"></i>
+                                                        Previous
+                                                    </button>
+                                                    <button type="button" class="btn btn-primary next">
+                                                        Next
+                                                        <i class="glyphicon glyphicon-chevron-right"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            <div class="link-pages">
+                                <a href="images/sample_02.jpg" title="Banana" data-gallery class="thumbnail">
+                                    <img src="images/sample_02.jpg" alt="Bird" >
+                                </a>
+                                <a href="images/sample_04.jpg" title="Apple" data-gallery class="thumbnail">
+                                    <img src="images/sample_04.jpg" alt="Candy">
+                                </a>
+                                <a href="images/sample_10.jpg" title="Orange" data-gallery class="thumbnail">
+                                    <img src="images/sample_10.jpg" alt="Apple">
+                                </a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <!--endregion-->
             </div>
         </div>
         <div id="footer">
@@ -132,7 +194,14 @@
 		</div>
     </div>
         
-        <!-- Latest compiled and minified JavaScript -->
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    
+    <!--region Image Gallery-->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="//blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
+    <script src="js/bootstrap-image-gallery.min.js"></script>
+    <!--endregion Image Gallery-->
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     </body>
 </html>
